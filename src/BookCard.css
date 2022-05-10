@@ -1,0 +1,40 @@
+.book {
+    display: flex;
+    flex: 1 1 18.75em;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 49, 49);
+    padding: 1em;
+    margin: 1em;
+    max-width: 22em;
+    border-radius: 5px;
+}
+
+.book-img img {
+    max-height: 12em;
+}
+
+.book-details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 1em;
+    font-size: smaller;
+}
+
+b {
+    color: rgb(182, 182, 235)
+}
+
+.fa-star {
+    color: yellow;
+    font-size: 12px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    display: none;
+}

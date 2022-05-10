@@ -1,0 +1,49 @@
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5em;
+    background-color: #333;
+    /* margin-bottom: em; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.max-book-selector {
+    margin-left: 5%;
+}
+
+.max-book-selector select {
+    padding: 0.4em;
+    border-radius: 5px;
+}
+
+.max-book-selector span {
+    margin-left: 0.4em;
+    color: white;
+}
+
+.pagination-btn {
+    margin-right: 5%;
+    color: white;
+}
+
+.pagination-btn button {
+    padding: 0.4em 0.9em;
+    margin: 0 1em;
+    background-color: rgb(21, 184, 225);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-btn button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:400px) {
+    .entries-number {
+        display: none;
+    }
+
+}

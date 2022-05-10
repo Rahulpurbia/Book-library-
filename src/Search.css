@@ -1,0 +1,59 @@
+:root {
+    --button-color: rgb(21, 184, 225);
+}
+
+.search-container {
+    height: 4em;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.filter {
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.filter i {
+    color: var(--button-color);
+    font-size: large;
+}
+
+.filter div {
+    font-size: 0.8em;
+    color: white;
+}
+
+.search-input {
+    margin-right: 5%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 20%;
+
+}
+
+.search-input input,
+.search-input button {
+    padding: 0.8em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.search-input input {
+    width: calc(100% - 40px);
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+    .search-input {
+        width: 50%;
+    }
+}
