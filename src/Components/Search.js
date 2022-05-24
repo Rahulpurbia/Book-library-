@@ -10,7 +10,7 @@ import "../Search.css"
 const Search = () => {
     const [inputField, setInputField] = useState("");
 
-    const { fetchBooks, maxEntries, currentPage, filterParams, isModalOpen, setIsModalOpen } = useBooks();
+    const { fetchBooks, maxEntries, currentPage, setCurrentPage, filterParams, isModalOpen, setIsModalOpen } = useBooks();
     const debouncedValue = useDebounce(inputField, 500)
 
     const handleChange = (e) => {
@@ -20,6 +20,10 @@ const Search = () => {
     useEffect(() => {
         debouncedValue && fetchBooks(inputField);
     }, [debouncedValue, maxEntries, currentPage, filterParams])
+
+    useEffect(() => {
+        debouncedValue && setCurrentPage(1);
+    }, [debouncedValue])
 
     return (
         <div className="search-container">
